@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fDj-mk-edr">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fDj-mk-edr">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,20 +26,20 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="650"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snakeLogo2" translatesAutoresizingMaskIntoConstraints="NO" id="KOl-5w-Wg1">
-                                        <rect key="frame" x="64" y="0.0" width="247" height="446"/>
+                                        <rect key="frame" x="64" y="0.0" width="247" height="449"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2di-Aq-2uQ">
-                                        <rect key="frame" x="0.0" y="446" width="375" height="68"/>
+                                        <rect key="frame" x="0.0" y="449" width="375" height="67"/>
                                         <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                         <state key="normal" title="Play">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BV1-FR-VrT" kind="show" id="Vnp-Lo-g8a"/>
+                                            <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" id="Vnp-Lo-g8a"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ey-1I-98e">
-                                        <rect key="frame" x="0.0" y="514" width="375" height="68"/>
+                                        <rect key="frame" x="0.0" y="516" width="375" height="67"/>
                                         <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ia5-CL-ZeJ">
-                                        <rect key="frame" x="0.0" y="582" width="375" height="68"/>
+                                        <rect key="frame" x="0.0" y="583" width="375" height="67"/>
                                         <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                         <state key="normal" title="Leaderboards">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,17 +91,17 @@
             <objects>
                 <viewController id="JU6-1g-aX3" customClass="SettingsViewController" customModule="Snake2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P4W-eQ-mme">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhN-X0-vR7">
-                                <rect key="frame" x="99.333333333333329" y="60" width="176.33333333333337" height="56"/>
+                                <rect key="frame" x="102.33333333333333" y="16" width="170.33333333333337" height="55"/>
                                 <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7r-bm-JrZ">
-                                <rect key="frame" x="16" y="54" width="30" height="68"/>
+                                <rect key="frame" x="16" y="10" width="30" height="67"/>
                                 <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -113,7 +111,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVR-xa-RXg">
-                                <rect key="frame" x="0.0" y="124" width="375" height="654"/>
+                                <rect key="frame" x="0.0" y="79" width="375" height="645"/>
                                 <connections>
                                     <segue destination="M6e-Xf-fSh" kind="embed" id="RvW-3R-wPr"/>
                                 </connections>
@@ -143,14 +141,14 @@
             <objects>
                 <tableViewController id="M6e-Xf-fSh" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZjS-HB-ksi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="654"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="645"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="darkBlue3"/>
                         <sections>
                             <tableViewSection id="EI4-Nx-gDc">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="44" id="jRf-Hc-26K">
-                                        <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="18" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jRf-Hc-26K" id="2HQ-MF-Kwh">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -191,7 +189,7 @@
                             <tableViewSection id="w6t-7J-5SE">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="44" id="eJT-Bm-mzX">
-                                        <rect key="frame" x="0.0" y="115" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="98" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eJT-Bm-mzX" id="rif-or-WLl">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -222,7 +220,7 @@
                                         <color key="backgroundColor" name="darkBlue3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="44" id="MlC-xx-k0W">
-                                        <rect key="frame" x="0.0" y="159" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="142" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MlC-xx-k0W" id="fap-04-qF2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -257,7 +255,7 @@
                             <tableViewSection id="eqj-hv-19m">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="44" id="USA-Uf-KPy">
-                                        <rect key="frame" x="0.0" y="239" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="222" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="USA-Uf-KPy" id="aFo-su-HhN">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -298,7 +296,7 @@
                             <tableViewSection id="8Za-0S-aKo">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="44" id="fjs-hg-wzb">
-                                        <rect key="frame" x="0.0" y="319" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="302" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fjs-hg-wzb" id="y8U-xZ-j0I">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -349,17 +347,17 @@
             <objects>
                 <viewController id="ulH-al-qfN" customClass="DifficultyViewController" customModule="Snake2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="phw-ai-qtK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="654"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMK-cd-6JE">
-                                <rect key="frame" x="90" y="60" width="195" height="55"/>
+                                <rect key="frame" x="90" y="16" width="195" height="55"/>
                                 <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaP-o6-MN6">
-                                <rect key="frame" x="16" y="54" width="30" height="67"/>
+                                <rect key="frame" x="16" y="10" width="30" height="67"/>
                                 <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -369,7 +367,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSq-4a-DuE">
-                                <rect key="frame" x="0.0" y="123" width="375" height="497"/>
+                                <rect key="frame" x="0.0" y="79" width="375" height="512"/>
                                 <connections>
                                     <segue destination="YrR-UV-sa8" kind="embed" id="hS6-Zl-mQb"/>
                                 </connections>
@@ -400,17 +398,17 @@
             <objects>
                 <viewController id="BBk-p5-rV7" customClass="BackgroundViewController" customModule="Snake2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P7X-f8-nxn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="654"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xr7-uX-cGO">
-                                <rect key="frame" x="64.000000000000014" y="60" width="247.33333333333337" height="55"/>
+                                <rect key="frame" x="64.000000000000014" y="16" width="247.33333333333337" height="55"/>
                                 <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRw-Hu-zFF">
-                                <rect key="frame" x="16" y="54" width="30" height="67"/>
+                                <rect key="frame" x="16" y="10" width="30" height="67"/>
                                 <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -420,7 +418,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbe-iO-dxT">
-                                <rect key="frame" x="0.0" y="123" width="375" height="497"/>
+                                <rect key="frame" x="0.0" y="79" width="375" height="512"/>
                                 <connections>
                                     <segue destination="UBe-az-7TJ" kind="embed" id="AIo-cb-vS0"/>
                                 </connections>
@@ -450,7 +448,7 @@
             <objects>
                 <collectionViewController id="UBe-az-7TJ" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wHw-LN-3hT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="497"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="512"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="darkBlue3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Xu-G6-2Y0">
@@ -460,7 +458,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="DEq-4m-2U7">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DEq-4m-2U7">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -495,14 +493,14 @@
             <objects>
                 <tableViewController id="YrR-UV-sa8" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="a8J-0T-fx1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="497"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="512"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="darkBlue3"/>
                         <sections>
                             <tableViewSection id="5DU-VE-Xyw">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Coy-VF-nlZ" style="IBUITableViewCellStyleDefault" id="gE7-AH-QgB">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Coy-VF-nlZ" style="IBUITableViewCellStyleDefault" id="gE7-AH-QgB">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gE7-AH-QgB" id="Zjr-f5-Dxi">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -519,8 +517,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="darkBlue3"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="F6N-Uz-5BR" style="IBUITableViewCellStyleDefault" id="X4O-bK-kfy">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="F6N-Uz-5BR" style="IBUITableViewCellStyleDefault" id="X4O-bK-kfy">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X4O-bK-kfy" id="tBS-bx-wgs">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -537,8 +535,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="darkBlue3"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="TFB-WA-TQX" style="IBUITableViewCellStyleDefault" id="B4Z-IH-bBX">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="TFB-WA-TQX" style="IBUITableViewCellStyleDefault" id="B4Z-IH-bBX">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B4Z-IH-bBX" id="QnK-Ux-KeJ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -573,17 +571,17 @@
             <objects>
                 <viewController id="HBL-U7-0hW" customClass="LeaderboardsViewController" customModule="Snake2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wu9-xZ-YT2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LeaderBoards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re1-jR-nkB">
-                                <rect key="frame" x="45.333333333333343" y="60" width="284.33333333333326" height="55"/>
+                                <rect key="frame" x="45.333333333333343" y="16" width="284.33333333333326" height="55"/>
                                 <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igw-it-pym">
-                                <rect key="frame" x="16" y="54" width="30" height="67"/>
+                                <rect key="frame" x="16" y="10" width="30" height="67"/>
                                 <fontDescription key="fontDescription" name="LilitaOne" family="Lilita One" pointSize="48"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="&lt;"/>
@@ -592,7 +590,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7cC-1f-ZIl">
-                                <rect key="frame" x="16" y="123" width="343" height="29"/>
+                                <rect key="frame" x="16" y="79" width="343" height="32"/>
                                 <color key="backgroundColor" name="darkBlue3"/>
                                 <segments>
                                     <segment title="First"/>
@@ -601,20 +599,20 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dty-0F-7j6">
-                                <rect key="frame" x="0.0" y="160" width="375" height="617"/>
+                                <rect key="frame" x="0.0" y="119" width="375" height="604"/>
                                 <connections>
                                     <segue destination="EwW-zq-36D" kind="embed" id="Ff6-If-8FF"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6GZ-tO-jLa">
-                                <rect key="frame" x="0.0" y="159" width="375" height="1"/>
+                                <rect key="frame" x="0.0" y="118" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="yHn-2Y-OXx"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ag-E4-ctn">
-                                <rect key="frame" x="0.0" y="777" width="375" height="1"/>
+                                <rect key="frame" x="0.0" y="723" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="fSn-zl-eyz"/>
@@ -654,7 +652,7 @@
             <objects>
                 <tableViewController id="EwW-zq-36D" customClass="LeaderboardTableViewController" customModule="Snake2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ni7-NS-oXa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="604"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="darkBlue3"/>
                         <prototypes>
