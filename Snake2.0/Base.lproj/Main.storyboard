@@ -35,7 +35,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" id="Vnp-Lo-g8a"/>
+                                            <segue destination="N9y-42-8kq" kind="presentation" modalPresentationStyle="fullScreen" id="jRl-uH-nZD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ey-1I-98e">
@@ -731,12 +731,41 @@
             </objects>
             <point key="canvasLocation" x="606" y="134"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="iZW-hh-hef">
+            <objects>
+                <viewController id="N9y-42-8kq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uaZ-dU-WGi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6N8-Rw-JQa">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="embed" id="kF7-Tz-1Ec"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6N8-Rw-JQa" firstAttribute="top" secondItem="E8F-9F-smx" secondAttribute="top" id="1rD-uD-fGB"/>
+                            <constraint firstItem="6N8-Rw-JQa" firstAttribute="leading" secondItem="E8F-9F-smx" secondAttribute="leading" id="6SD-Kl-8YR"/>
+                            <constraint firstItem="E8F-9F-smx" firstAttribute="trailing" secondItem="6N8-Rw-JQa" secondAttribute="trailing" id="Uqx-iF-KTu"/>
+                            <constraint firstItem="6N8-Rw-JQa" firstAttribute="bottom" secondItem="E8F-9F-smx" secondAttribute="bottom" id="aY3-OI-0f1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E8F-9F-smx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ML1-Xy-IYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1156" y="-620"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Snake2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
@@ -744,7 +773,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1162" y="-586"/>
+            <point key="canvasLocation" x="-177" y="-638"/>
         </scene>
     </scenes>
     <resources>

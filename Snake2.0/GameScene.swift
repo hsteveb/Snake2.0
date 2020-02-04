@@ -37,7 +37,9 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         playing = false
-        self.anchorPoint = CGPoint.zero
+        self.physicsBody = SKPhysicsBody(edgeLoopFrom: self.frame)
+        
+        //self.anchorPoint = CGPoint.zero
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(GameScene.swipeDirection(sender:)))
         swipeRight.direction = .right
@@ -54,6 +56,9 @@ class GameScene: SKScene {
         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(GameScene.swipeDirection(sender:)))
         swipeDown.direction = .down
         view.addGestureRecognizer(swipeDown)
+        
+        print("frame: \(self.frame)")
+        self.physicsBody?.categoryBitMask = 0b0001
         
         
         let scoreBackButton = SKLabelNode(text: back)
@@ -82,9 +87,10 @@ class GameScene: SKScene {
         button3.name = startResumeName
         button3.color = UIColor.white
         button3.fontSize = 96
-        button3.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
+        button3.position = CGPoint(x: 0, y: 0)
         button3.isUserInteractionEnabled = false
         self.addChild(button3)
+        
     }
     
     
@@ -261,8 +267,11 @@ class GameScene: SKScene {
     func moveNode()
     {
         playing = true
-        node = SKShapeNode(rect: CGRect(x: self.size.width / 2, y: self.size.height / 2, width: 50, height: 50))
+        node = SKShapeNode(rect: CGRect(x: 0 - 25, y: 0 - 25, width: 50, height: 50))
         node?.fillColor = UIColor(named: "darkRed5")!
+        node?.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 50, height: 50))
+        node?.physicsBody?.collisionBitMask = 0b0001
+        node?.physicsBody?.affectedByGravity = false
         self.addChild(node!)
         let number = GKARC4RandomSource().nextInt(upperBound: 4)
         switch number
